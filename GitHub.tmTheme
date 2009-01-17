@@ -516,7 +516,7 @@ selection       #FFFFAA handmade :-)
 			<key>name</key>
 			<string>Extra: Diff Range</string>
 			<key>scope</key>
-			<string>meta.diff.range, meta.separator</string>
+			<string>meta.diff.range, meta.diff.index, meta.separator</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
