@@ -535,7 +535,7 @@ selection       #FFFFAA handmade :-)
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#DDFFDD</string>
+				<string>#FFDDDD</string>
 				<key>foreground</key>
 				<string>#999999</string>
 			</dict>
@@ -548,7 +548,7 @@ selection       #FFFFAA handmade :-)
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#FFDDDD</string>
+				<string>#DDFFDD</string>
 				<key>foreground</key>
 				<string>#999999</string>
 			</dict>
