@@ -15,7 +15,7 @@ Just double-click or `open` the GitHub.tmTheme file and TextMate will take care 
 
 1. Download GitHub.js
 2. Copy it to: /Applications/Pacu.app/Contents/charcoal/themes/
-3. Restart Pacu and select the RubyBlue theme from the preferences dialog.
+3. Restart Pacu and select the GitHub theme from the preferences dialog.
 
 ## Screenshot
 
