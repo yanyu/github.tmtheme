@@ -5,49 +5,53 @@
 // please contact me at yanyu [at] cyblogic [dot] com.
 // More at http://github.com/yanyu/github.tmtheme
 
-PacuEditorFG = '#000000';
-PacuEditorBG = '#F8F8FF';
-PacuEditorCursor = '#000';
-PacuEditorSelection = '#FFFFAA';
-PacuEditorMatch = '#FF6';
-PacuEditorBracketMatch = PacuEditorMatch;
-PacuEditorCurrentLine = '#FFFEEB';
-PacuComment = '#999988';
-PacuBlockComment = '#999988';
-PacuHtmlComment = '#999988';
-PacuString = '#DD1144';
-PacuStringLiteral = '#DD1144';
-PacuRegularExpression = '#009926';
-PacuInterpolation = '#DD1144';
-PacuRubyInterpolation = '#DD1144';
-PacuChar = '#DD1144';
-PacuDocument = '#DD1144';
-PacuNumber = '#009999';
-PacuRubyNumber = '#009999';
-PacuInteger = '#009999';
-PacuFloat = '#009999';
-PacuKeyword = {color: '#000000', bold: true};
-PacuJavascriptKeyword = {color: '#000000', bold: true};
-PacuObjcKeyword = {color: '#000000', bold: true};
-PacuPreprocessing = '#000000';
-PacuBuiltinConstant = {color: '#000000', bold: true};
-PacuEscape = '#000000';
-PacuBlock = '#000000';
-PacuSymbol = '#990073';
-PacuVariable = '#000000';
-PacuRubyVariable = '#000000';
-PacuPunctuator = '#666666';
-PacuOperator = {color: '#000000', bold: true};
-PacuArrayBracket = '#000000';
-PacuBackslashSequence = '#000000';
-PacuTag = '#000000';
-PacuTagName = '#000080';
-PacuTagOpen = '#000000';
-PacuTagClose = '#000000';
-PacuTagOther = '#000000';
-PacuTagAttribute = '#008080';
-PacuTagValue = '#000000';
-PacuErbTag = '#000000';
+GHEditorFG = '#000000';
+GHEditorBG = '#F8F8FF';
+GHEditorCursor = '#000';
+GHEditorSelection = '#FFFFAA';
+GHEditorMatch = '#FF6';
+GHEditorBracketMatch = GHEditorMatch;
+GHEditorCurrentLine = '#FFFEEB';
+GHComment = '#999988';
+GHBlockComment = '#999988';
+GHHtmlComment = '#999988';
+GHStringLiteral = '#DD1144';
+GHRegularExpression = '#009926';
+GHInterpolation = '#DD1144';
+GHRubyInterpolation = '#DD1144';
+GHDocument = '#DD1144';
+GHNumber = '#009999';
+GHRubyNumber = '#009999';
+GHInteger = '#009999';
+GHFloat = '#009999';
+GHKeyword = {color: '#000000', bold: true};
+GHJavascriptKeyword = {color: '#000000', bold: true};
+GHObjcKeyword = {color: '#000000', bold: true};
+GHPreprocessing = '#000000';
+GHRubyClassName = {color: '#445588', bold: true};
+GHConstantName = '#008080';
+GHBuiltinConstant = {color: '#000000', bold: true};
+GHCharacterConstant = '#DD1144';
+GHEscape = '#666666';
+GHBlock = '#000000';
+GHSymbol = '#990073';
+GHVariable = '#0086B3';
+GHRubyVariable = '#0086B3';
+GHRubyInstanceVariable = '#0086B3';
+GHRubyClassVariable = '#0086B3';
+GHRubyGlobalVariable = '#0086B3';
+GHPunctuator = '#666666';
+GHOperator = {color: '#000000', bold: true};
+GHArrayBracket = '#000000';
+GHBackslashSequence = '#000000';
+GHTag = '#000000';
+GHTagName = '#000080';
+GHTagOpen = '#000000';
+GHTagClose = '#000000';
+GHTagOther = '#000000';
+GHTagAttribute = '#008080';
+GHTagValue = '#000000';
+GHErbTag = '#000000';
 
 charcoal.themes["GitHub"] =
 {
@@ -55,105 +59,110 @@ charcoal.themes["GitHub"] =
 
 	layers: {
 		"ruby": {
-			"Comment": PacuComment,
-			"BlockComment": PacuBlockComment,
-			"Keyword": PacuKeyword,
-			"DeclarationKeyword": PacuKeyword,
-			"Builtin": PacuBuiltinConstant,
-			"String": PacuString,
-			"EscapeSequence": PacuEscape,
-			"Interpolation": PacuInterpolation,
-			"Block": PacuBlock,
-			"Document": PacuDocument,
-			"Integer": PacuInteger,
-			"Float": PacuFloat,
-			"Symbol": PacuSymbol,
-			"ObjectName": PacuRubyVariable,
-			"Operator": PacuOperator,
-			"OpeningBracket": PacuArrayBracket,
-			"ClosingBracket": PacuArrayBracket
+			"Comment": GHComment,
+			"BlockComment": GHBlockComment,
+			"Block": GHBlock,
+			"Interpolation": GHInterpolation,
+			"String": GHStringLiteral,
+			"Document": GHDocument,
+			"Keyword": GHKeyword,
+			"DeclarationKeyword": GHKeyword,
+			"Builtin": GHBuiltinConstant,
+			"LocalName": GHRubyVariable,
+			"MemberName": GHRubyInstanceVariable,
+			"ClassMemberName": GHRubyClassVariable,
+			"ClassName": GHRubyClassName,
+			"ConstantName": GHConstantName,
+			"GlobalName": GHRubyGlobalVariable,
+			"Symbol": GHSymbol,
+			"OpeningBracket": GHArrayBracket,
+			"ClosingBracket": GHArrayBracket,
+			"Float": GHFloat,
+			"Integer": GHInteger,
+			"Operator": GHOperator,
+			"EscapeSequence": GHEscape
 		},
 		"python": {
-			"Comment": PacuComment,
-			"String": PacuString,
-			"Keyword": PacuKeyword,
-			"Identifier": PacuKeyword,
-			"Operator": PacuOperator,
-			"Float": PacuFloat,
-			"Integer": PacuInteger
+			"Comment": GHComment,
+			"String": GHStringLiteral,
+			"Keyword": GHKeyword,
+			"Identifier": GHKeyword,
+			"Operator": GHOperator,
+			"Float": GHFloat,
+			"Integer": GHInteger
 		},
 		"javascript": {
-			"Comment": PacuComment,
-			"Keyword": PacuJavascriptKeyword,
-			"ReservedWord": PacuJavascriptKeyword,
-			"FutureReservedWord": PacuJavascriptKeyword,
-			"Identifier": PacuOperator,
-			"DecimalLiteral": PacuNumber,
-			"HexIntegerLiteral": PacuNumber,
-			"StringLiteral": PacuStringLiteral,
-			"EscapeSequence": PacuEscape,
-			"BackslashSequence": PacuBackslashSequence,
-			"RegularExpressionLiteral": PacuRegularExpression,
-			"Punctuator" : PacuPunctuator,
-			"DivPunctuator" : PacuPunctuator
+			"Comment": GHComment,
+			"Keyword": GHJavascriptKeyword,
+			"ReservedWord": GHJavascriptKeyword,
+			"FutureReservedWord": GHJavascriptKeyword,
+			"Identifier": GHOperator,
+			"DecimalLiteral": GHNumber,
+			"HexIntegerLiteral": GHNumber,
+			"StringLiteral": GHStringLiteral,
+			"EscapeSequence": GHEscape,
+			"BackslashSequence": GHBackslashSequence,
+			"RegularExpressionLiteral": GHRegularExpression,
+			"Punctuator" : GHPunctuator,
+			"DivPunctuator" : GHPunctuator
 		},
 		"xml": {
-			"Comment": PacuHtmlComment,
-			"TagName": PacuTagName,
-			"TagOpen": PacuTagOpen,
-			"TagClose": PacuTagClose,
-			"AttributeName": PacuTagAttribute,
-			"AttributeValue": PacuTagValue,
-			"ScriptTagName": PacuTagOther
+			"Comment": GHHtmlComment,
+			"TagName": GHTagName,
+			"TagOpen": GHTagOpen,
+			"TagClose": GHTagClose,
+			"AttributeName": GHTagAttribute,
+			"AttributeValue": GHTagValue,
+			"ScriptTagName": GHTagOther
 		},
 		"erb": {
-			"ErbComment": PacuComment,
-			"ErbStart": PacuErbTag,
-			"ErbEnd": PacuErbTag
+			"ErbComment": GHComment,
+			"ErbStart": GHErbTag,
+			"ErbEnd": GHErbTag
 		},
 		"cxx": {
-			"BlockComment": PacuBlockComment,
-			"LineComment": PacuComment,
-			"PreprocessingComment": PacuComment,
-			"Preprocessing": PacuPreprocessing,
-			"EscapedChar": PacuEscape,
-			"String": PacuString,
-			"ObjcEscapedChar": PacuEscape,
-			"ObjcString": PacuString,
-			"Keyword": PacuKeyword,
-			"TypeKeyword": PacuKeyword,
-			"QtKeyword": PacuKeyword,
-			"ObjcKeyword": PacuObjcKeyword,
-			"Integer": PacuInteger,
-			"Float": PacuFloat,
-			"Char": PacuChar,
-			"Punctuator" : PacuPunctuator
+			"BlockComment": GHBlockComment,
+			"LineComment": GHComment,
+			"PreprocessingComment": GHComment,
+			"Preprocessing": GHPreprocessing,
+			"EscapedChar": GHEscape,
+			"String": GHStringLiteral,
+			"ObjcEscapedChar": GHEscape,
+			"ObjcString": GHStringLiteral,
+			"Keyword": GHKeyword,
+			"TypeKeyword": GHKeyword,
+			"QtKeyword": GHKeyword,
+			"ObjcKeyword": GHObjcKeyword,
+			"Integer": GHInteger,
+			"Float": GHFloat,
+			"Char": GHCharacterConstant,
+			"Punctuator" : GHPunctuator
 		},
 		"bash": {
-			"Comment": PacuComment,
-			"SingleQuoted": PacuString,
-			"DoubleQuoted": PacuString,
-			"Document": PacuDocument,
-			"EscapedChar": PacuEscape,
-			"Expansion": PacuInterpolation,
-			"Operator": PacuOperator,
-			"Builtin": PacuBuiltinConstant,
-			"Reserved": PacuKeyword,
-			"Integer": PacuInteger
+			"Comment": GHComment,
+			"SingleQuoted": GHStringLiteral,
+			"DoubleQuoted": GHStringLiteral,
+			"Document": GHDocument,
+			"EscapedChar": GHEscape,
+			"Expansion": GHInterpolation,
+			"Operator": GHOperator,
+			"Builtin": GHBuiltinConstant,
+			"Reserved": GHKeyword,
+			"Integer": GHInteger
 		}
 	},
 	
 	editor: {
-		foreground: PacuEditorFG,
-		background: PacuEditorBG,
-		cursor: PacuEditorCursor,
+		foreground: GHEditorFG,
+		background: GHEditorBG,
+		cursor: GHEditorCursor,
 		lineNumbers: "#808080",
 		lineNumbersBright: "#000",
 		lineNumbersBackground: "#F2F2F2",
 		lineNumbersBackgroundBright: "#E5E5E5",
-		selection: PacuEditorSelection,
-		match: PacuEditorMatch,
-		bracketMatch: PacuEditorBracketMatch,
-		currentLine: PacuEditorCurrentLine
+		selection: GHEditorSelection,
+		match: GHEditorMatch,
+		bracketMatch: GHEditorBracketMatch,
+		currentLine: GHEditorCurrentLine
 	}
 };
