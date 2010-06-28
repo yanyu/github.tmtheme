@@ -19,7 +19,7 @@ Just double-click or `open` the GitHub.tmTheme file and TextMate will take care 
 
 ## Screenshot
 
-![Syntax Highlighting screenshot](http://github.com/mkhl/github.tmtheme/blob/master/gist-screenshot.png)
+![Syntax Highlighting screenshot](http://github.com/mkhl/github.tmtheme/raw/master/gist-screenshot.png)
 
 Compare to the original: [gist.rb by defunkt ](http://github.com/defunkt/gist/tree/master/gist.rb)
 
